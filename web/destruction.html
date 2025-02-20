@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Destructuring Examples</title></head>
+<body>
+
+    <script>
+        let student = { name: "Tejas", age: 21, course: "MCA" };
+        let { name, age } = student;
+        document.write(`Student Name: ${name}, Age: ${age} <br>`);
+
+        let { course = "Not Assigned" } = student;
+        document.write(`Course: ${course} <br>`);
+
+        let numbers = [10, 20, 30, 40, 50];
+        let [first, second, ...rest] = numbers;
+        document.write(`First: ${first}, Second: ${second} <br>`);
+        document.write(`Rest of the numbers: ${rest} <br>`);
+    </script>
+
+</body>
+</html>

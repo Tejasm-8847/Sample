@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><title>Array Operations</title></head>
+<body>
+    <script>
+        let nums = [10, 20, 30, 40, 50];
+
+        nums.push(60);  
+        document.write(`After push: ${nums} <br>`);
+
+        nums.pop();  
+        document.write(`After pop: ${nums} <br>`);
+
+        nums.unshift(5);  
+        document.write(`After unshift: ${nums} <br>`);
+
+        nums.shift();  
+        document.write(`After shift: ${nums} <br>`);
+
+        let part = nums.slice(1, 3);  
+        document.write(`Slice (index 1 to 3): ${part} <br>`);
+
+        nums.splice(2, 1, 35);  
+        document.write(`After splice: ${nums} <br>`);
+
+        let moreNums = [70, 80];
+        let combined = nums.concat(moreNums);  
+        document.write(`After concat: ${combined} <br>`);
+
+        document.write(`Includes 30? ${nums.includes(30)} <br>`); 
+
+        let [first, second, ...rest] = nums;  
+        document.write(`Destructured First: ${first}, Second: ${second} <br>`);
+        document.write(`Rest of the array: ${rest} <br>`);
+    </script>
+</body>
+</html>

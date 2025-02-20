@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>ES6 Var, Let, Const</title></head>
+<body>
+
+    <script>
+        var x = 10;
+        document.write(`Var x: ${x} <br>`);
+        x = 20;
+        document.write(`Updated Var x: ${x} <br><br>`);
+
+        let y = 30;
+        document.write(`Let y: ${y} <br>`);
+        y = 40;
+        document.write(`Updated Let y: ${y} <br><br>`);
+
+        const z = 50;
+        document.write(`Const z: ${z} <br><br>`);
+
+        function testScope() {
+            var a = 100;
+            let b = 200;
+            const c = 300;
+            document.write(`Inside Function - Var a: ${a}, Let b: ${b}, Const c: ${c} <br>`);
+        }
+        testScope();
+
+        if (true) {
+            var d = 400;
+            let e = 500;
+            const f = 600;
+            document.write(`Inside Block - Var d: ${d}, Let e: ${e}, Const f: ${f} <br>`);
+        }
+        
+        document.write(`Outside Block - Var d: ${d} <br>`);
+    </script>
+
+</body>
+</html>

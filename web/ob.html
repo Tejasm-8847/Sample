@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Object Literal Enhancements</title></head>
+<body>
+    <script>
+        let name = "Tejas";
+        let age = 21;
+        let course = "MCA";
+
+        let student = { name, age, course };
+
+        let college = {
+            name: "BMS College",
+            location: "Bangalore",
+            details() {
+                return `College: ${this.name}, Location: ${this.location}`;
+            }
+        };
+
+        document.write(`Student Name: ${student.name}, Age: ${student.age}, Course: ${student.course} <br>`);
+        document.write(college.details());
+    </script>
+</body>
+</html>

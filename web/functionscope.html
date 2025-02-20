@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scope Example</title>
+</head>
+<body>
+    <h2>Function Scope in ES6</h2>
+
+    <script>
+        function scopeExample() {
+            if (true) {
+                var x = 10;  
+                let y = 20;  
+                const z = 30; 
+                document.write(`Inside block: x=${x}, y=${y}, z=${z}<br>`);
+            }
+            document.write(`Outside block: x=${x}`);
+        }
+
+        scopeExample();
+    </script>
+</body>
+</html>
